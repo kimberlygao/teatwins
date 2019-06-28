@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>tea time</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|News+Cycle&display=swap" rel="stylesheet">
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>z
+      .game{
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hAndTea{
+        margin: -10px;
+        margin-top: -40px;
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+      } 
+      
+      #titleAlign{
+        margin-bottom: -1px;
+      }
+      
+      #footerAlign{
+        position: relative;
+      }
+      
+      #title {
+        padding-top: 30px;
+      }
+      
+      body {
+        background-color: #c6cbcf;
+      }
+      
+      .topnav {
+        border-bottom: 2px solid white;
+      }
+      
+      .header {
+        margin-top: -120px;
+      }
+       html, body {
+  text-align: center;
+  padding-top: 40px;
+  
+  -webkit-perspective: 700px;
+     -moz-perspective: 700px;
+      -ms-perspective: 700px;
+          perspective: 700px;
+}
+
+/* Reset */
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+/* Custom */
+button {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 9px 18px;
+  top: 0;
+  font-size: 30px;
+  font-family: 'News Cycle', sans-serif;
+  border-radius: 4px;
+  border-bottom: 1px solid rgba( 28, 227, 125, 0.5 );
+  background: #b0aaa7;
+  color: #fff;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+  
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+          transform: translateZ(0);
+  
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+button:hover {
+  top: -10px;
+  box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+  
+  -webkit-transform: rotateX(20deg);
+     -moz-transform: rotateX(20deg);
+      -ms-transform: rotateX(20deg);
+          transform: rotateX(20deg);
+}
+
+button:active {
+  top: 0px;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+  background: #b0aaa7;
+}
+      
+      input {
+  padding: 2px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+}
+      
+    </style>
+  </head>  
+  <body>
+     <!-- header -->
+    <div class="hAndTea">
+      <div class="header">
+      <h1 id="title"><center>tea time</center></h1>
+        
+        
+      <!-- navigation bar -->
+      <div class="topnav">
+        <a href="index.html">HOME</a>
+        <a href="info.html">INFO</a>
+        <a href="cause.html">CAUSE</a>
+        <a href="find.html">FIND</a>
+        <a href="puns.html">PUNS</a>
+        <a href="game.html">GAME</a>
+        <a href="about.html">ABOUT</a>
+      </div>
+    </div>
+    </div>
+    
+  <center><h1 ><br><font face="News Cycle" color="#5C6971">tea game</font><br><br></h1></center>
+  <center><iframe class="game" width="375" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/W6dwYAXOhniKqB3ZQhRsGJZtYTLjzMRFFq0sLUpX62E/embed"></iframe></center>;
+
+  <div class="footer" id="footerAlign">
+      <h3 class="joinTheTeam">
+        spill your tea! 
+      </h3>
+      <p class="infoAboutTeam">
+        Join our all-inclusive communiTEA by simply filling out the information below! We are more than excited to welcome you into Team Tea!
+      </p>
+      <p class="name">
+        full name: <input type="text" name="fname">
+      </p>
+      <p class="email">
+            e-mail: <input type="email" name="emailaddress">
+      </p>
+      <p class="submit">
+        <button onclick="msg()">
+          join the TEAm
+        </button>
+        <script>
+        function msg() {
+            alert("Welcome to the TEAm!");
+        }
+        </script>
+      </p>
+    </div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
