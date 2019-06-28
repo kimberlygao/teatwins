@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>tea time</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|News+Cycle&display=swap" rel="stylesheet">
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+      #cover{
+        width: 100%;
+        margin: 0px;
+      }
+      
+      * {
+        margin: 0px;
+        
+        
+      }
+      .environment{
+        position: relative;
+        padding: 50px;
+        background-color: #d2e7be;
+        color: #4f5152;
+        font-family: 'News Cycle', sans-serif;
+        text-align: left;
+      }
+      
+      #turtle {
+        width: 30%;
+        margin: 0px;
+        height: auto;
+        padding-top: 5px;
+        border-radius: 60%;
+      }
+      
+      .environment h3 {
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 2px;
+        font-size: 25px;
+      }
+      
+      .footer {
+      border-top: 2px solid white;
+    }
+      
+      td {
+        margin: auto;
+        padding: 8px;
+        text-align: center;
+        margin : auto;
+        
+      }
+      
+      tr {
+        text-align: center;
+        margin: auto;
+      }
+      
+      p {
+      }
+      
+      h5 { 
+        font-size: 18px;
+      }
+      
+      #help p {
+        padding-left: 20px;
+      }
+      
+      html, body {
+  text-align: center;
+  padding-top: 40px;
+  
+  -webkit-perspective: 700px;
+     -moz-perspective: 700px;
+      -ms-perspective: 700px;
+          perspective: 700px;
+}
+
+/* Reset */
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+/* Custom */
+button {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 9px 18px;
+  top: 0;
+  font-size: 30px;
+  font-family: 'News Cycle', sans-serif;
+  border-radius: 4px;
+  border-bottom: 1px solid rgba( 28, 227, 125, 0.5 );
+  background: #b0aaa7;
+  color: #fff;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+  
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+          transform: translateZ(0);
+  
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+button:hover {
+  top: -10px;
+  box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+  
+  -webkit-transform: rotateX(20deg);
+     -moz-transform: rotateX(20deg);
+      -ms-transform: rotateX(20deg);
+          transform: rotateX(20deg);
+}
+
+button:active {
+  top: 0px;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+  background: #b0aaa7;
+}
+      
+      input {
+  padding: 2px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+    </style>
+  </head>  
+  <body>
+     <!-- header -->
+    <div class="header">
+      <h1 id="title"><center>tea time</center></h1>
+      <!-- navigation bar -->
+      <div class="topnav">
+        <a href="index.html">HOME</a>
+        <a href="info.html">INFO</a>
+        <a href="cause.html">CAUSE</a>
+        <a href="find.html">FIND</a>
+        <a href="puns.html">PUNS</a>
+        <a href="game.html">GAME</a>
+        <a href="about.html">ABOUT</a>
+      </div>
+    </div>
+    
+  <div class="environment">
+    <center><h1><font face="News Cycle">our communi-tea</font><br><br></h1></center>
+    <div id="problem">
+      <h3> the problem </h3>
+      <p> in the US, more than 500 million plastic straws are used and discarded each day. because straws are extremely lightweight and made of polyprophylene plastic, they cannot be recycled and often end up in the wrong places. </p>
+      <p> <br> as one of the most common ocean pollution, many of the straws we use end up in our earth's oceans where they do not biodegrade or dissolve, but rather break down into increasingly smaller pieces known as "microplastics". these microplastics end up contaminating our oceans in addtion to harming our marine life. </p>
+    </div>
+        
+    <div id="facts">
+      <h3> by the year 2050... </h3>
+      <table>
+        <tr><center><td> the amount of plastic in the ocean is set to increase tenfold </td><td> 99% of all sea birds will have ingested plastic </td><td> there will be more plastic in the ocean than fish </td></center></tr>
+      </table>
+    </div>
+    
+    <div id="help">
+      <h3> how you can get involved </h3>
+      <h5> the simplest way for you to reduce plastic pollution is to reject the use of single-use plastics, like straws. </h5>
+      <p> the next time you go to a restaurant, make sure to request for your drink without straw. <br></p>
+      <h5> on the otherhand, if you enjoy using straws, you could invest in resuasable straws. </h5>
+      <p> these reusable straws are generally made of stainless steel or glass that can be used, washed, cleaned, repeatedly. they come in all different sizes and colors to fit any needs (i.e. big enough for boba) or wants you may have. <a href = "https://www.amazon.com/s?k=reusable+straws&crid=Y39AQQC2RHL2&sprefix=resua%2Caps%2C167&ref=nb_sb_ss_sc_1_5"> click here </a>to find straws for you! </p>
+    </div>
+    
+    <center><img src="https://cdn.glitch.com/1d9327b6-42bc-4105-bc74-9640f58ba378%2Fthe-last-straw-lg.png?v=1561704273408" alt="turtle" id = "turtle"></center>
+    <h3 id="turtles"><center> save the turtles </center></h3>
+  </div>
+
+  <div class="footer" id="footerAlign">
+      <h3 class="joinTheTeam">
+        spill your tea! 
+      </h3>
+      <p class="infoAboutTeam">
+        Join our all-inclusive communiTEA by simply filling out the information below! We are more than excited to welcome you into Team Tea!
+      </p>
+      <p class="name">
+        full name: <input type="text" name="fname">
+      </p>
+      <p class="email">
+            e-mail: <input type="email" name="emailaddress">
+      </p>
+      <p class="submit">
+        <button onclick="msg()">
+          join the TEAm
+        </button>
+        <script>
+        function msg() {
+            alert("Welcome to the TEAm!");
+        }
+        </script>
+      </p>
+    </div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>

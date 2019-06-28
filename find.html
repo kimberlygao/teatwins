@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>tea time</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|News+Cycle&display=swap" rel="stylesheet">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #c6cbcf;
+        color: white;
+      }
+      .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #b0aaa7;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+
+      .button:hover {background-color: #b0aaa7}
+
+      .button:active {
+        background-color: #b0aaa7;
+        box-shadow: 0 5px #b0aaa7;
+        transform: translateY(4px);
+        
+        #maps {
+          border-top: 2px solid white;
+          background-color: #646566;
+        }
+      }
+      .footer{
+        margin-top: 10px;
+      }
+      
+      .topnav {
+        border-bottom: 2px solid white;
+      }
+      html, body {
+  text-align: center;
+  padding-top: 40px;
+  
+  -webkit-perspective: 700px;
+     -moz-perspective: 700px;
+      -ms-perspective: 700px;
+          perspective: 700px;
+}
+
+/* Reset */
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+/* Custom */
+button {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 9px 18px;
+  top: 0;
+  font-size: 30px;
+  font-family: 'News Cycle', sans-serif;
+  border-radius: 4px;
+  border-bottom: 1px solid rgba( 28, 227, 125, 0.5 );
+  background: #b0aaa7;
+  color: #fff;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+  
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+          transform: translateZ(0);
+  
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+button:hover {
+  top: -10px;
+  box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+  
+  -webkit-transform: rotateX(20deg);
+     -moz-transform: rotateX(20deg);
+      -ms-transform: rotateX(20deg);
+          transform: rotateX(20deg);
+}
+
+button:active {
+  top: 0px;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+  background: #b0aaa7;
+}
+      
+      input {
+  padding: 2px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+    </style>
+  </head>  
+  <body>
+     <!-- header -->
+    <div class="header">
+      <h1><center><font face="Dancing Script">tea time</font></center></h1>
+      <!-- navigation bar -->
+      <div class="topnav">
+        <a href="index.html">HOME</a>
+        <a href="info.html">INFO</a>
+        <a href="cause.html">CAUSE</a>
+        <a href="find.html">FIND</a>
+        <a href="puns.html">PUNS</a>
+        <a href="game.html">GAME</a>
+        <a href="about.html">ABOUT</a>
+      </div>
+    </div>
+    
+  <div id="maps">
+    <center><h1><font face="News Cycle"><br>taste-tea</font><br><br></h1></center>
+    <center><h5><font face="News Cycle">For you tea lovers, we have the perfect widget for you!</font><br><br></h5></center>
+    <center><button onclick="getLocation()" class="button">Find a tea shop near me</button></center>
+    <h5><center><br><br><font face="News Cycle">Wait a few seconds after clicking.</font></center></h5><br>
+   <center><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13415.972635343369!2d-96.80295940178293!3d32.79244066737673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stea!5e0!3m2!1sen!2sus!4v1561728841161!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+  </div>
+    
+  <div class="footer" id="footerAlign">
+      <h3 class="joinTheTeam">
+        spill your tea! 
+      </h3>
+      <p class="infoAboutTeam">
+        Join our all-inclusive communiTEA by simply filling out the information below! We are more than excited to welcome you into Team Tea!
+      </p>
+      <p class="name">
+        full name: <input type="text" name="fname">
+      </p>
+      <p class="email">
+            e-mail: <input type="email" name="emailaddress">
+      </p>
+      <p class="submit">
+        <button onclick="msg()">
+          join the TEAm
+        </button>
+        <script>
+        function msg() {
+            alert("Welcome to the TEAm!");
+        }
+        </script>
+      </p>
+    </div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <script>
+    var x = document.getElementById("demo");
+var place = "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13415.972635343369!2d-96.80295940178293!3d32.79244066737673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stea!5e0!3m2!1sen!2sus!4v1561728841161!5m2!1sen!2sus";
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+  document.getElementById("map").style.display = "block";
+  place="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13415.972635343369!2d" + position.coords.longitude + "!3d" + position.coords.latitude + "!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stea!5e0!3m2!1sen!2sus!4v1561728841161!5m2!1sen!2sus";
+    document.getElementById("map").src = place;
+}
+    </script>
+  </body>
+</html>

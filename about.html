@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|News+Cycle&display=swap" rel="stylesheet">
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+      .portrait{
+        width: 100%;
+        margin: 0px;
+        height: auto;
+        width: 75%;
+        padding-top: 5px;
+        border-radius: 50%;
+      }
+      .about{
+
+        margin: 0px;
+        padding: 10px;
+        padding-bottom: 20px;
+        position: relative;
+        background-color: #d2e7be;
+        color: #3b3c3e;
+      }
+      
+      html, body {
+        background-color: #d2e7be;
+      }
+      .about h1 {
+        background-color: #d2e7be;
+      }
+      table {
+        text-align: center;
+      }
+      td {
+        padding: 5px;
+        align: center;
+      }
+      #row1{
+        margin: 0px;
+        padding: 0px;
+      }
+      #row2{
+        margin: 0px;
+        padding: 0px;
+        text-align: left;
+      }
+    .hAndTea{
+        margin: -10px;
+        margin-top: -40px;
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+      } 
+      
+      #titleAlign{
+        margin-bottom: -1px;
+      }
+      
+      #footerAlign{
+        width: 103%;
+        margin-left: -10px;
+        margin-right: 20px;
+        margin-bottom: -20px;
+        
+      }
+      
+      .footer {
+      border-top: 2px solid white;
+        padding-top: 20px;
+    }
+      
+      html, body {
+  text-align: center;
+  padding-top: 40px;
+  
+  -webkit-perspective: 700px;
+     -moz-perspective: 700px;
+      -ms-perspective: 700px;
+          perspective: 700px;
+}
+
+/* Reset */
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+/* Custom */
+button {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 9px 18px;
+  top: 0;
+  font-size: 30px;
+  font-family: 'News Cycle', sans-serif;
+  border-radius: 4px;
+  border-bottom: 1px solid rgba( 28, 227, 125, 0.5 );
+  background: #b0aaa7;
+  color: #fff;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+  
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+          transform: translateZ(0);
+  
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+button:hover {
+  top: -10px;
+  box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+  
+  -webkit-transform: rotateX(20deg);
+     -moz-transform: rotateX(20deg);
+      -ms-transform: rotateX(20deg);
+          transform: rotateX(20deg);
+}
+
+button:active {
+  top: 0px;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+  background: #b0aaa7;
+}
+      
+      input {
+  padding: 2px 2px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+    </style>
+  </head>  
+  <body>
+    
+     <!-- header -->
+    <div class="hAndTea">
+      <div class="header">
+      <h1 id="title"><center>tea time</center></h1>
+        
+        
+      <!-- navigation bar -->
+      <div class="topnav">
+        <a href="index.html">HOME</a>
+        <a href="info.html">INFO</a>
+        <a href="cause.html">CAUSE</a>
+        <a href="find.html">FIND</a>
+        <a href="puns.html">PUNS</a>
+        <a href="game.html">GAME</a>
+        <a href="about.html">ABOUT</a>
+      </div>
+    </div>
+    </div>
+    
+<table class = "about">
+  <center><h1><font face="News Cycle" color="white"><br>meet the brew</font><br><br></h1></center>
+      <tr id = "row1">
+        <td><img src="https://cdn.glitch.com/1d9327b6-42bc-4105-bc74-9640f58ba378%2F36FEDBDE-5469-4A8D-AB5F-59F651DCB743.JPG?v=1561650226865" class="portrait" alt="kimmi"></td>
+        <td><img src="https://cdn.glitch.com/1d9327b6-42bc-4105-bc74-9640f58ba378%2FIMG_8948.JPG?v=1561650227688" class="portrait" alt="connie"></td>
+      </tr>
+      <tr id = "row2">
+        <td><font face="News Cycle">Hey, I'm Kimmi and I'm from Houston, TX, born and raised. I am going to be a senior at the Texas Academy of Math and Science and I plan combining my passion for art and computer science towards a career in the near future. As a minority in the computer science field, I cannot stress enough the importance of diversity and equality in the workforce, especially STEM fields. Outside of school, I spend my time dancing, teaching children, hanging out with friends, and watching Netflix. I love drinking any green tea drinks while spilling the tea with friends at ShareTea, my favorite boba place. Reach out and come spill the tea with me!</font></td>
+        <td><font face="News Cycle">Hi, I'm Connie, a KWK Scholar in Dallas. I am currently a TAMS student in the computer science track. Besides my passion for CS and business, I love working in my research lab where I am able to delve deeper into the realm of machine learning and artificial intelligence in application to the medical world. Moreover, I am a huge advocate for women in STEM and women in business as I believe it is crucial to close the gender gap between men in women in the workforce. In my free time, I love being with my friends, painting, running, and watching Marvel movies! I also love drinking almond milk and looking at cute pictures of piglets.</font></td>
+      </tr> 
+    </table> 
+    
+  <div class="footer" id="footerAlign">
+      <h3 class="joinTheTeam">
+        spill your tea! 
+      </h3>
+      <p class="infoAboutTeam">
+        Join our all-inclusive communiTEA by simply filling out the information below! We are more than excited to welcome you into Team Tea!
+      </p>
+      <p class="name">
+        full name: <input type="text" name="fname">
+      </p>
+      <p class="email">
+            e-mail: <input type="email" name="emailaddress">
+      </p>
+      <p class="submit">
+        <button onclick="msg()">
+          join the TEAm
+        </button>
+        <script>
+        function msg() {
+            alert("Welcome to the TEAm!");
+        }
+        </script>
+      </p>
+    </div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
